@@ -1,0 +1,6 @@
+[submodule "ext/c-utils"]
+	path = ext/c-utils
+	url = git@github.com:EvanKuhn/c-utils.git
+[submodule "ext/libyaml"]
+	path = ext/libyaml
+	url = git@github.com:yaml/libyaml.git
