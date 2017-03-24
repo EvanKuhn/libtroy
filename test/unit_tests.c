@@ -1,4 +1,5 @@
 #include "nu_unit.h"
+#include "test_foo.h"
 
 nu_init();
 
@@ -7,7 +8,7 @@ int main(int argc, char **argv) {
   nu_parse_cmdline(argc, argv);
 
   // Run test suites
-  //nu_run_suite(test_suite__something);
+  nu_run_suite(test_suite__foo);
 
   // Print results and return
   nu_print_summary();

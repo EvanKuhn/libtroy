@@ -4,3 +4,4 @@
 [submodule "ext/libyaml"]
 	path = ext/libyaml
 	url = git@github.com:yaml/libyaml.git
+  ignore = dirty

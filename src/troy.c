@@ -171,7 +171,7 @@ troy_node_t* troy_seq_at(troy_node_t* node, int index)
 
 troy_node_t* troy_map_find(troy_node_t* node, char* key)
 {
-  return hash_get_str(node->data.map, key);
+  return str_hash_get(node->data.map, key);
 }
 
 int troy_node_get_int(troy_node_t* node)
@@ -272,7 +272,7 @@ troy_node_t* _process_yaml_events(yaml_parser_t* parser)
           else if (troy_node_is_map(curr)) {
             if (key) {
               troy_node_t* newnode = _troy_node_create_scalar(scalar_value);
-              hash_set_str(curr->data.map, key, newnode);
+              str_hash_set(curr->data.map, key, newnode);
               key = NULL;
             }
             else {
