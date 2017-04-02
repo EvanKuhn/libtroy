@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdbool.h>
-#include "c-utils/hash.h"
+#include "hash.h"
 
 // Node data types
 typedef enum troy_node_type {

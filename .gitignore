@@ -1,2 +1,10 @@
-/bin/unit_tests
-/lib/libtroy.a
+/bin/*
+/lib/*
+/obj/*.o
+
+# These come from c-utils and are copied by the 'bootstrap' make target
+/include/c_utils_version.h
+/include/hash.h
+/include/nu_unit.h
+/include/uthash.h
+/src/hash.c
